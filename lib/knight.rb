@@ -3,6 +3,10 @@
 # Knight class representing the chess figure.
 # Computes the shortest path of valid moves from one position to another.
 class Knight
+  def shortest_path(start, _goal)
+    nil if out_of_bounds?(start)
+  end
+
   def out_of_bounds?(position)
     x, y = position
     x > 7 || y > 7 || x.negative? || y.negative?
